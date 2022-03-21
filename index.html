@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="my.css">
+    <title>gza 계산기</title>
+
+    <meta property="og:title" content="gza, zdg 계산기">
+    <meta property="og:description" content="쉽고 빠른 gza, zdg 계산 + 비교 표">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-3 centering">
+        <h1 class="centering">gza,zdg 간편 계산기입니다</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="row px-3">
+            <label for="art" class="col-12">게시글</label>
+            <input type="number"class="col-12 py-2" id="art">  
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row px-3">
+            <label for="sub-art" class="col-12">댓글</label>
+            <input type="number"class="col-12 py-2" id="sub-art">  
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row px-3">
+            <label for="look" class="col-12">출석</label>
+            <input type="number"class="col-12 py-2" id="look">  
+          </div>
+        </div>
+      </div> 
+      <div class="row my-3 centering">
+        <div class="col-12">
+          <button class="btn btn-primary py-3">
+            계산하기
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col-12 alert alert-primary">
+          <span class="title">GZA = </span>
+          <span id="gza-ret">???</span>
+        </p>
+        <p class="col-12 alert alert-primary">
+          <span class="title">ZDG = </span>
+          <span id="zdg-ret">???</span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h2 class="col-12">GZA</h2>
+          <p class="col-12">
+            당신이 얼마나 느그자와 가까운 지 나타내는 척도
+          </p>
+          <p class="small-word">(게시글 수*5 + 댓글 수 + 출석수)÷15000</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="col-12">ZDG</h2>
+          <p class="col-12">
+            당신이 몇 마리의 진드기와 동급인지 나타내는 척도
+          </p>
+          <p class="small-word">(댓글 수 + 출석수÷3)÷2</p>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">비교표</th>
+                <th scope="col">GZA</th>
+                <th scope="col">ZDG</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">진드기</th>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">닭둘기</th>
+                <td>0.05</td>
+                <td>167</td>
+              </tr>
+              <tr>
+                <th scope="row">왁무새</th>
+                <td>0.1</td>
+                <td>333</td>
+              </tr>
+              <tr>
+                <th scope="row">침팬지</th>
+                <td>0.233</td>
+                <td>667</td>
+              </tr>
+              <tr>
+                <th scope="row">느그자</th>
+                <td>1</td>
+                <td>3333</td>
+              </tr>
+              <tr>
+                <th scope="row">우왁굳</th>
+                <td>3.435</td>
+                <td>7933</td>
+              </tr>
+  
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+  
+  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="cal.js"></script>
+
+  </body>
+</html>

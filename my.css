@@ -1,0 +1,17 @@
+.small-word{
+  font-size: 0.7rem;
+  padding-left: 10px;
+}
+
+.title{
+  font-size: 1.3rem;
+}
+
+.centering{
+  margin: 0 auto;
+  text-align: center;
+}
+
+button{
+  width : 100%;
+}
